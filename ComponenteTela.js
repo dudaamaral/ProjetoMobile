@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { View, Image, Text, StyleSheet} from "react-native";
 import duda from './assets/dude.jpg';
 import alicia from './assets/alicia.jpeg'
-// import planodefundo from './assets/planodefundo.png'
 import { Button } from "react-native-elements/dist/buttons/Button";
  
 export default class ComponenteTela extends Component {
@@ -21,7 +20,7 @@ export default class ComponenteTela extends Component {
         <Text style={styles.titulo}>Quem está assistindo?</Text>
         <View style={{ flexDirection: 'row' }}>
 
-          <View style={{ flexDirection: 'column' }, styles.column}>
+          <View style={{flexDirection: 'column'}, styles.column}>
             <Image style={styles.imageStyle}
               source={duda}/>
             <View style={{ flexDirection: 'column' }}>

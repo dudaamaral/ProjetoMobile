@@ -20,7 +20,6 @@ render(){
 
             <Text style={styles.texto}> NETFLIX </Text>
             <Button title = "Entrar" onPress={()=> 
-          //  {  navigation.push("Imagem") }}
           {navigation.navigate("Tela", {
               params: {texto:"Eduarda Amaral"}
           })
