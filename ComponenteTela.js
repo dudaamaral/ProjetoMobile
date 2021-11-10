@@ -93,9 +93,8 @@ const styles = StyleSheet.create({
     borderWidth: 0.5, 
     borderColor: 'grey', 
     height: 50,
-    width: 250,
+    width: 220,
     margin: 50, 
     textAlign: 'center',
-    textDecorationColor: 'grey',
   },
 });
