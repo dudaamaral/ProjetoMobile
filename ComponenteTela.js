@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { View, Image, Text, StyleSheet } from "react-native";
+import { View, Image, Text, StyleSheet} from "react-native";
 import duda from './assets/dude.jpg';
 import alicia from './assets/alicia.jpeg'
 // import planodefundo from './assets/planodefundo.png'
 import { Button } from "react-native-elements/dist/buttons/Button";
-
+ 
 export default class ComponenteTela extends Component {
 
   constructor(props) {
@@ -40,7 +40,7 @@ export default class ComponenteTela extends Component {
             </Text>
           </View>
         </View>
-        <Button title = "Gerenciar perfis"></Button>
+        <Button title = "Gerenciar perfis" style={{},styles.buttonStyle}> </Button>
 
       </View>
 
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     marginTop: 1,
     color: 'white',
-
+    textAlign: 'center',
   },
   container: {
     flex: 1,
@@ -89,15 +89,14 @@ const styles = StyleSheet.create({
   column: {
     marginLeft: 50,
   },
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    elevation: 3,
-    backgroundColor: 'black',
-    borderStyle: 'solid',
-    borderWidth: 'medium',
+  buttonStyle: {
+    backgroundColor: 'black', 
+    borderWidth: 0.5, 
+    borderColor: 'grey', 
+    height: 50,
+    width: 250,
+    margin: 50, 
+    textAlign: 'center',
+    textDecorationColor: 'grey',
   },
 });
