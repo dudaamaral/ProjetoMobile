@@ -1,16 +1,10 @@
 import React, { Component } from "react";
-import { View, Image, Text, StyleSheet} from "react-native";
+import { View, Image, Text, StyleSheet,Pressable} from "react-native";
 import duda from './assets/dude.jpg';
 import alicia from './assets/alicia.jpeg'
 import { Button } from "react-native-elements/dist/buttons/Button";
  
 export default class ComponenteTela extends Component {
-
-  constructor(props) {
-    super(props);
-    const { texto } = this.props.route.params.params;
-    this.state = { texto };
-  }
 
 
 
@@ -37,7 +31,7 @@ export default class ComponenteTela extends Component {
 
           <View style={{ flexDirection: 'column' }, styles.column}>
           <Pressable onPress={()=>{ 
-              navigation.navigate('Friends')}}>
+              navigation.navigate('Friends1')}}>
             <Image style={styles.imageStyle}
               source={alicia}
             />

@@ -7,40 +7,40 @@ const slides = [
   {
     key:1,
     title:'Episódios Favoritos',
-    text: 'mkfmadfjadn',
-    image: require('./assets/dude.jpg'),
+    text: 'Arraste para o lado para conhecer alguns dos meus episódios favoritos da série Friends! ',
+    image: require('./assets/friends 1.gif'),
     backgroundColor: '#59b2ab',
 
   },
 
   {
     key:2,
-    title:'Episódios Favoritos',
-    text: 'mkfmadfjadn',
-    image: require('./assets/alicia.jpeg'),
+    title:'“Aquele em que Todos Fazem 30 Anos”',
+    text: 'É o 14º episódio da 7ª temporada de Friends. A celebração do aniversário de 30 anos de Rachel faz com que todos os amigos recordem dos seus aniversários de 30 anos.',
+    image: require('./assets/friends 2.png'),
     backgroundColor: '#59b2ab',
 
   },
 
   {
     key:3,
-    title:'Episódios Favoritos',
-    text: 'mkfmadfjadn',
-    image: require('./assets/alicia.jpeg'),
+    title:'"Aquele com o pedido de casamento"',
+    text: 'É o 25º episódio da 6ª temporada. Richard diz a Monica que ainda a ama. A tentativa de Chandler de surpreendê-la ao pedir sua mão a faz pensar que ele não quer se casar com ela.',
+    image: require('./assets/friends 3.png'),
     backgroundColor: '#59b2ab',
 
   },
   {
     key:4,
-    title:'Episódios Favoritos',
-    text: 'mkfmadfjadn',
-    image: require('./assets/alicia.jpeg')
+    title:'"Aquele onde Phoebe corre"',
+    text: 'É o 6º episódio da 7ª temporada. Phoebe corre de um jeito desengonçado, e Rachel tem vergonha de ser vista correndo com ela.',
+    image: require('./assets/friends 4.gif')
   },
   {
     key:'5',
-    title:'Episódios Favoritos',
-    text: 'mkfmadfjadn',
-    image: require('./assets/alicia.jpeg')
+    title:'"Aquele em que Joey Perde o Seguro"',
+    text: 'É o 6º episódio da 4ª temporada. Joey desenvolve uma hérnia, mas não tem convênio médico para ir ao hospital. Ross finge ter um sotaque britânico ao lecionar para uma nova turma.',
+    image: require('./assets/friends 5.png')
   },
 
   
@@ -54,13 +54,14 @@ export default class Friends extends Component {
   render(){
   return (
     
-    <View style={{flex:1}}>
+    <View style={{flex:3, backgroundColor:'black'}}>
 
       <AppIntroSlider
+      
         renderItem={renderSlides}
         data={slides}
         activeDotStyle={{
-          backgroundColor:'#009cff',
+          backgroundColor:'red',
           width: 30
         }}
         />
@@ -82,10 +83,13 @@ function  renderSlides ({ item }){
     source={item.image}
     style={{
       // resizeMode:'cover',
-      height:'100%',
-      width:'100%',
+      height:600,
+      width:600,
       padding: 10,
       alignItems:'center',
+      justifyContent:'center',
+      alignSelf:'center',
+
     }}
     />
     <Text
@@ -102,7 +106,7 @@ function  renderSlides ({ item }){
     <Text
     style={{
       textAlign:'center',
-      color:'#000',
+      color:'white',
       paddingHorizontal:25,
       fontSize: 15
     }}

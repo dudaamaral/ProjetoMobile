@@ -1,16 +1,15 @@
 import React,{ Component } from 'react'
-import { View,Text, Button, StyleSheet} from 'react-native';
+import { View,Text, StyleSheet} from 'react-native';
+import { Button } from 'react-native-elements';
+
+
 
 
 
 export default class MeuComponente extends Component{
 
-
-    // constructor(props){
-    //     super(props);
-    //     const {texto} = this.props.route.params.params;
-    //     this.state = {texto}; 
-    // }
+    
+    
 render(){
     const{ navigation } = this.props
 
@@ -19,12 +18,9 @@ render(){
         <View style={styles.container}>
 
             <Text style={styles.texto}> NETFLIX </Text>
-            <Button title = "Entrar" onPress={()=> 
-          {navigation.navigate("Tela", {
-              params: {texto:"Eduarda Amaral"}
-          })
-        
-        }}         /> 
+            <Button buttonStyle={styles.button} 
+            title = "Entrar" onPress={()=> 
+          {navigation.navigate('Tela')}}         /> 
   
 
         </View>
@@ -44,9 +40,15 @@ render(){
             backgroundColor: 'black',
             textAlign: 'center',
             alignItems: 'center',
-            fontSize: 72,
+            fontSize: 200,
             fontWeight: 'bold'
-        }
+        },
+        button:{
+            backgroundColor:'black',
+            borderRadius:15,
+            width: 100,
+            height: 100,
+          }
 
     
 

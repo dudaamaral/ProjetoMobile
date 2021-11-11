@@ -3,7 +3,7 @@ import { View,Text, Button, StyleSheet, ImageBackground,Image} from 'react-nativ
 
 
 
-export default class Friends extends Component{
+export default class Skinks extends Component{
     render() {
 
         return (
