@@ -27,6 +27,15 @@ export default function App() {
       <Stack.Screen
       options={{headerShown:false}} //escondendo a parte de cima 
       name='Netflix' component={MeuComponente}/>
+
+      <Stack.Screen
+     // options={{headerShown:false}} //escondendo a parte de cima 
+      name='Friends' component={Friends}/>
+
+      <Stack.Screen
+      options={{headerShown:false}} //escondendo a parte de cima 
+      name='Skins' component={Skins}/>
+
       <Stack.Screen 
       // options={{headerShown:false}}
       name = 'Tela' component = {ComponenteTela}/>
@@ -34,15 +43,6 @@ export default function App() {
      <Stack.Screen 
       // options={{headerShown:false}}
       name = 'Friends1' component = {Friends1}/>
-
-     <Stack.Screen 
-      // options={{headerShown:false}}
-      name = 'Skins' component = {Skins}/>
-
-<Stack.Screen 
-      // options={{headerShown:false}}
-      name = 'Friends' component = {Friends}/>
-
 
      </Stack.Navigator>
      

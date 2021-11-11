@@ -1,8 +1,6 @@
 import React,{ Component } from 'react'
 import { View,Text, Button, StyleSheet, ImageBackground,Image} from 'react-native';
 
-
-
 export default class Skinks extends Component{
     render() {
 

@@ -48,6 +48,7 @@ render(){
             borderRadius:15,
             width: 100,
             height: 100,
+            fontSize:20,
           }
 
     
