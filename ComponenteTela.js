@@ -15,14 +15,19 @@ export default class ComponenteTela extends Component {
 
 
   render() {
+    const{ navigation } = this.props
     return (
       <View style={styles.container}>
         <Text style={styles.titulo}>Quem está assistindo?</Text>
         <View style={{ flexDirection: 'row' }}>
 
+
           <View style={{flexDirection: 'column'}, styles.column}>
+            <Pressable onPress={()=>{ 
+              navigation.navigate('Skins')}}>
             <Image style={styles.imageStyle}
               source={duda}/>
+            </Pressable>
             <View style={{ flexDirection: 'column' }}>
               <Text style={{ flexDirection: 'row' }}>
                 <Text style={styles.textStyle}>Eduarda</Text>
@@ -31,9 +36,12 @@ export default class ComponenteTela extends Component {
           </View>
 
           <View style={{ flexDirection: 'column' }, styles.column}>
+          <Pressable onPress={()=>{ 
+              navigation.navigate('Friends')}}>
             <Image style={styles.imageStyle}
               source={alicia}
             />
+            </Pressable>
             <Text style={{ flexDirection: 'row' }}>
               <Text style={styles.textStyle}>Alícia</Text>
             </Text>
