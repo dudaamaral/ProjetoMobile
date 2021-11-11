@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image, Text, StyleSheet} from "react-native";
+import { View, Image, Text, StyleSheet, Pressable} from "react-native";
 import duda from './assets/dude.jpg';
 import alicia from './assets/alicia.jpeg'
 import { Button } from "react-native-elements/dist/buttons/Button";

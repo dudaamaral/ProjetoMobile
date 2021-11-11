@@ -5,6 +5,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Button} from 'react-native';
 import MeuComponente from './MeuComponente';
 import ComponenteTela from './ComponenteTela';
+import Friends from './Friends';
+import Skins from './Skins';
 
 const Stack = createStackNavigator()
 export default function App() {
@@ -23,6 +25,15 @@ export default function App() {
       <Stack.Screen
       options={{headerShown:false}} //escondendo a parte de cima 
       name='Netflix' component={MeuComponente}/>
+
+      <Stack.Screen
+      options={{headerShown:false}} //escondendo a parte de cima 
+      name='Friends' component={Friends}/>
+
+      <Stack.Screen
+      options={{headerShown:false}} //escondendo a parte de cima 
+      name='Skins' component={Skins}/>
+
       <Stack.Screen 
       // options={{headerShown:false}}
       name = 'Tela' component = {ComponenteTela}/>
