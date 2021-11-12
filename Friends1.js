@@ -14,7 +14,7 @@ export default class Friends1 extends Component{
             style={styles.imagemFundo} > 
 
       <View style={[styles.caixa, styles.elevation]}>
-      <Text style={ styles.text }>F R I E N D S </Text>
+      <Text style={ styles.text }>F ● R ● I ● E ● N ● D ● S</Text>
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
     <Text style={styles.text}> Ross, Rachel, Mônica, Chandler, Joey e Phoebe formam um grupo de seis amigos que lutam para se sobressair e progredir na competitiva vida de Manhattan. Seu humor inteligente e apoio mútuo incondicional fazem com sua amizade seja cada vez mais forte, superando assim todos os obstáculos que a vida lhes apresenta.</Text> 

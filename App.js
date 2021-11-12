@@ -8,7 +8,7 @@ import ComponenteTela from './ComponenteTela';
 import Friends from  './Friends';
 import Skins from './Skins';
 import Friends1 from './Friends1';
-
+import Skins1 from './Skins1';
 
 const Stack = createStackNavigator()
 export default function App() {
@@ -33,8 +33,12 @@ export default function App() {
       name='Friends' component={Friends}/>
 
       <Stack.Screen
-      options={{headerShown:false}} //escondendo a parte de cima 
+      // options={{headerShown:false}} //escondendo a parte de cima 
       name='Skins' component={Skins}/>
+
+      <Stack.Screen
+      // options={{headerShown:false}} //escondendo a parte de cima 
+      name='Skins1' component={Skins1}/>
 
       <Stack.Screen 
       // options={{headerShown:false}}

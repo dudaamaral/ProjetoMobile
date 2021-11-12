@@ -7,40 +7,40 @@ const slides = [
   {
     key:1,
     title:'Episódios Favoritos',
-    text: 'Arraste para o lado para conhecer alguns dos meus episódios favoritos da série Friends! ',
-    image: require('./assets/friends 1.gif'),
+    text: 'Arraste para o lado para conhecer alguns dos meus episódios favoritos da série Skins! ',
+    image: require('./assets/effy2.gif'),
     backgroundColor: '#59b2ab',
 
   },
 
   {
     key:2,
-    title:'"Aquele em que Todos Fazem 30 Anos"',
-    text: 'É o 14º episódio da 7ª temporada de Friends. A celebração do aniversário de 30 anos de Rachel faz com que todos os amigos recordem dos seus aniversários de 30 anos.',
-    image: require('./assets/friends 2.png'),
+    title:'"Cassie"',
+    text: 'É o 1º episódio da 1ª temporada. Cassie acredita que consegue fazer com que todos pensem que está superando o distúrbio alimentar. Ela encontra conforto em Sid, que gosta de outra pessoa.',
+    image: require('./assets/cassie.gif'),
     backgroundColor: '#59b2ab',
 
   },
 
   {
     key:3,
-    title:'"Aquele com o pedido de casamento"',
-    text: 'É o 25º episódio da 6ª temporada. Richard diz a Monica que ainda a ama. A tentativa de Chandler de surpreendê-la ao pedir sua mão a faz pensar que ele não quer se casar com ela.',
-    image: require('./assets/friends 3.png'),
+    title:'"Freddie"',
+    text: 'É o 5º episódio da 4ª temporada. Freddie está completamente apaixonado e curte todos os momentos ao lado de Effy. Juntos, eles aproveitam a vida sem pensar no futuro.',
+    image: require('./assets/freddie.gif'),
     backgroundColor: '#59b2ab',
 
   },
   {
     key:4,
-    title:'"Aquele onde Phoebe corre"',
-    text: 'É o 6º episódio da 7ª temporada. Phoebe corre de um jeito desengonçado, e Rachel tem vergonha de ser vista correndo com ela.',
-    image: require('./assets/friends 4.gif')
+    title:'"Todo mundo"',
+    text: 'É o 8º episódio da 5ª temporada. Chega o dia do casamento de Rich e Grace, e os problemas que atormentam a turma podem complicar este que deveria ser um dia feliz.',
+    image: require('./assets/gracerich.gif')
   },
   {
     key:'5',
-    title:'"Aquele em que Joey Perde o Seguro"',
-    text: 'É o 6º episódio da 4ª temporada. Joey desenvolve uma hérnia, mas não tem convênio médico para ir ao hospital. Ross finge ter um sotaque britânico ao lecionar para uma nova turma.',
-    image: require('./assets/friends 5.png')
+    title:'"Todo mundo"',
+    text: 'É o 9º episódio da 1ª temporada. Anwar deve aceitar a religião de sua família e a sexualidade de Maxxie. Sid finalmente percebe que ama Cassie e corre para encontrá-la.',
+    image: require('./assets/todomundo.gif')
   },
 
   
@@ -48,7 +48,7 @@ const slides = [
 
 ]
 
-export default class Friends extends Component {
+export default class Skins extends Component {
 
     
   render(){
@@ -61,7 +61,7 @@ export default class Friends extends Component {
         renderItem={renderSlides}
         data={slides}
         activeDotStyle={{
-          backgroundColor:'red',
+          backgroundColor:'#483D8B',
           width: 30
         }}
         />
@@ -98,7 +98,7 @@ function  renderSlides ({ item }){
       paddingBottom:10,
       fontSize:23,
       fontWeight:'bold',
-      color: 'red',
+      color: '#483D8B',
       alignSelf:'center'
     }}>
       {item.title}
@@ -132,3 +132,4 @@ const styles = StyleSheet.create({
   },
 
 });
+
