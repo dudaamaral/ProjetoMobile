@@ -116,8 +116,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',  
     height: 50,
     width: 220,
-    margin: 50, 
+    marginBottom: 50, 
+    marginLeft: 90,
+    marginRight: 40,
     textAlign: 'center',
+    alignItems: 'center',
 },
 buttonStyle: {
   backgroundColor: 'black', 

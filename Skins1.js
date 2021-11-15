@@ -136,10 +136,9 @@ function  renderSlides ({ item }){
   
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    // backgroundColor: 'black',
+    // display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
   },
   text: {
     color: 'white',
@@ -154,7 +153,9 @@ const styles = StyleSheet.create({
     padding:'1rem'
   },
   button1Style:{
-    backgroundColor: 'red',  
+    backgroundColor: '#483D8B', 
+    marginLeft: 300,
+    marginRight: 10, 
     height: 50,
     width: 220,
     margin: 50, 
