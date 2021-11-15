@@ -19,6 +19,9 @@ export default class Friends1 extends Component{
           <Button title ="Friends" onPress={()=>
           {navigation.navigate("Friends1")}} buttonStyle={styles.button1Style}>
           </Button>
+          <Button title ="Sugestões" onPress={()=>
+          {navigation.navigate("Sugestão")}} buttonStyle={styles.button1Style}>
+          </Button>
 
 
         </View>

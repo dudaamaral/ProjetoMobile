@@ -46,7 +46,8 @@ export default class GerenciarPerfis extends Component {
                 </Text>
               </View>
               </View>
-              <Button style={styles.buttonStyle}
+              
+              <Button buttonStyle={styles.buttonStyle}
             title = "Concluído" onPress={()=> 
             {navigation.navigate('Tela')}}/> 
             </View>

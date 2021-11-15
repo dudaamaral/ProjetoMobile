@@ -22,6 +22,9 @@ export default class ComponenteTela extends Component {
           <Button title ="Friends" onPress={()=>
           {navigation.navigate("Friends1")}} buttonStyle={styles.button1Style}>
           </Button>
+          <Button title ="Sugestões" onPress={()=>
+          {navigation.navigate("Sugestões")}} buttonStyle={styles.button1Style}>
+          </Button>
 
 
         </View>

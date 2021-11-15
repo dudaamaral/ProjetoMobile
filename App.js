@@ -10,8 +10,7 @@ import Skins from './Skins';
 import Friends1 from './Friends1';
 import Skins1 from './Skins1';
 import GerenciarPerfis from './GerenciarPerfis';
-// import firebase from './src/connection';
-
+import Sugestão from './Sugestões';
 
 const Stack = createStackNavigator()
 export default function App() {
@@ -54,6 +53,10 @@ export default function App() {
       <Stack.Screen 
       options={{headerShown:false}}
       name= 'GerenciarPerfis' component = {GerenciarPerfis}/>
+
+      <Stack.Screen
+      options = {{headerShown:false}}
+      name= 'Sugestões' component = {Sugestão} />
 
      </Stack.Navigator>
 
