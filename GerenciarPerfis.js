@@ -19,6 +19,10 @@ export default class GerenciarPerfis extends Component {
           <Button title ="Friends" onPress={()=>
           {navigation.navigate("Friends1")}} buttonStyle={styles.button1Style}>
           </Button>
+          <Button title ="Sugestões" onPress={()=>
+          {navigation.navigate("Sugestões")}} buttonStyle={styles.button1Style}>
+          </Button>
+          
         </View>
             <Text style={styles.titulo}>Gerenciar perfis: </Text>
             <View style={{ flexDirection: 'row' }}>
