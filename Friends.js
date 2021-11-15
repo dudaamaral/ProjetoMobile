@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     padding:'1rem'
   },
   button1Style:{
-    marginLeft: 300,
+    marginLeft: 200,
     marginRight: 10,
     backgroundColor: 'red',  
     height: 50,

@@ -35,7 +35,7 @@ export default class Sugestão extends Component {
 
               <Input placeholder='E-mail' keyboardType='email-address'></Input>
               <Input placeholder='Sugestão' keyboardType='text'></Input>
-              <Button tittle="Enviar" buttonStyle={styles.button1Style}></Button>
+              <Button title="Enviar" buttonStyle={styles.buttonStyle}></Button>
             </View>
 
           </View>
@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontSize: 50,
-    alignItems:'center'
+    alignItems:'center',
+    marginBottom: 50,
   },
   menuStyle:{
     display:'flex',
@@ -72,12 +73,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
 },
 buttonStyle: {
-  backgroundColor: 'black', 
-  borderWidth: 0.5, 
-  borderColor: 'grey', 
+  backgroundColor: 'red',  
   height: 50,
   width: 220,
   margin: 50, 
+  marginLeft: 200,
   textAlign: 'center',
 },
 
