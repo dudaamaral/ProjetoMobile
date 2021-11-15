@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, ImageBackground, ScrollView } from 'react-native';
 import React,{ Component } from 'react';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import {Button} from 'react-native-elements';
+
 
 const slides = [
   {
@@ -52,9 +54,23 @@ export default class Skins extends Component {
 
     
   render(){
+    const{ navigation } = this.props
   return (
     
     <View style={{flex:3, backgroundColor:'black'}}>
+          <View style={styles.menuStyle}>
+          <Button title ="Home" onPress={()=>
+          {navigation.navigate("Netflix")}} buttonStyle={styles.button1Style}>
+          </Button>
+          <Button title ="Skins" onPress={()=>
+          {navigation.navigate("Skins")}} buttonStyle={styles.button1Style}>
+          </Button>
+          <Button title ="Friends" onPress={()=>
+          {navigation.navigate("Friends1")}} buttonStyle={styles.button1Style}>
+          </Button>
+          </View>
+      
+
 
       <AppIntroSlider
       
@@ -130,6 +146,20 @@ const styles = StyleSheet.create({
     fontSize: 50,
     alignItems:'center'
   },
+  menuStyle:{
+    display:'flex',
+    flexDirection: 'row',
+    backgroundColor:'#000',
+    gap:'.5rem',
+    padding:'1rem'
+  },
+  button1Style:{
+    backgroundColor: 'red',  
+    height: 50,
+    width: 220,
+    margin: 50, 
+    textAlign: 'center',
+},
 
 });
 

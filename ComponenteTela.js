@@ -12,6 +12,19 @@ export default class ComponenteTela extends Component {
     const{ navigation } = this.props
     return (
       <View style={styles.container}>
+        <View style={styles.menuStyle}>
+          <Button title ="Home" onPress={()=>
+          {navigation.navigate("Netflix")}} buttonStyle={styles.button1Style}>
+          </Button>
+          <Button title ="Skins" onPress={()=>
+          {navigation.navigate("Skins")}} buttonStyle={styles.button1Style}>
+          </Button>
+          <Button title ="Friends" onPress={()=>
+          {navigation.navigate("Friends1")}} buttonStyle={styles.button1Style}>
+          </Button>
+
+
+        </View>
         <Text style={styles.titulo}>Quem está assistindo?</Text>
         <View style={{ flexDirection: 'row' }}>
 
@@ -41,7 +54,9 @@ export default class ComponenteTela extends Component {
             </Text>
           </View>
         </View>
-        <Button title = "Gerenciar perfis" style={{},styles.buttonStyle}> </Button>
+        <Button style={{},styles.buttonStyle}
+        title = "Gerenciar perfis" onPress={()=> 
+        {navigation.navigate('GerenciarPerfis')}}/> 
 
       </View>
 
@@ -90,13 +105,27 @@ const styles = StyleSheet.create({
   column: {
     marginLeft: 50,
   },
-  buttonStyle: {
-    backgroundColor: 'black', 
-    borderWidth: 0.5, 
-    borderColor: 'grey', 
+  menuStyle:{
+    display:'flex',
+    flexDirection: 'row',
+    backgroundColor:'#000',
+    gap:'.5rem',
+    padding:'1rem'
+  },
+  button1Style:{
+    backgroundColor: 'red',  
     height: 50,
     width: 220,
     margin: 50, 
     textAlign: 'center',
-  },
+},
+buttonStyle: {
+  backgroundColor: 'black', 
+  borderWidth: 0.5, 
+  borderColor: 'grey', 
+  height: 50,
+  width: 220,
+  margin: 50, 
+  textAlign: 'center',
+},
 });

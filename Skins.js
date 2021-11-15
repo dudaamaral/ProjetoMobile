@@ -8,6 +8,19 @@ export default class Skinks extends Component{
 
         return (
           <View style={styles.container}>
+             <View style={styles.menuStyle}>
+          <Button title ="Home" onPress={()=>
+          {navigation.navigate("Netflix")}} buttonStyle={styles.button1Style}>
+          </Button>
+          <Button title ="Skins" onPress={()=>
+          {navigation.navigate("Skins")}} buttonStyle={styles.button1Style}>
+          </Button>
+          <Button title ="Friends" onPress={()=>
+          {navigation.navigate("Friends1")}} buttonStyle={styles.button1Style}>
+          </Button>
+
+
+        </View>
             <ImageBackground
             source={require('./assets/skins12.jpg')}
             style={styles.imagemFundo}>
@@ -88,4 +101,18 @@ const styles = StyleSheet.create({
       width: 100,
       height: 60,
     },
+    button1Style:{
+      backgroundColor: 'red',  
+      height: 50,
+      width: 220,
+      margin: 50, 
+      textAlign: 'center',
+  },
+    menuStyle:{
+      display:'flex',
+      flexDirection: 'row',
+      backgroundColor:'#000',
+      gap:'.5rem',
+      padding:'1rem'
+    }
   });
