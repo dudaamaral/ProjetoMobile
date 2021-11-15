@@ -53,12 +53,11 @@ const styles = StyleSheet.create({
       marginBottom: 40,
       marginTop: 1,
       color: 'white',
-  
     },
     container: {
-      flex: 1,
+      display: 'flex',
       backgroundColor: 'black',
-      justifyContent: "center",
+      justifyContent: 'start',
       alignItems: 'center',
       textAlign: 'center',
     },
@@ -105,7 +104,8 @@ const styles = StyleSheet.create({
       backgroundColor: 'red',  
       height: 50,
       width: 220,
-      margin: 50, 
+      margin: 8, 
+      marginLeft: 12,
       textAlign: 'center',
   },
     menuStyle:{

@@ -26,7 +26,7 @@ export default class Friends1 extends Component{
 
         </View>
             <ImageBackground
-            source={require('./assets/friendss.jpg')}
+            source={require('./assets/friends.png')}
             style={styles.imagemFundo} > 
 
       <View style={[styles.caixa, styles.elevation]}>
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     //width:'50%',
     // }
     caixa: {
-        backgroundColor: '#E6221E',
+        backgroundColor: 'grey',
         justifyContent: 'center',
         height: 600,
         width: 600,
@@ -124,7 +124,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',  
         height: 50,
         width: 220,
-        margin: 50, 
+        margin: 10,
+        marginTop: 105, 
         textAlign: 'center',
     },
 

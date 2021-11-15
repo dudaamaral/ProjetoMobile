@@ -46,7 +46,10 @@ export default class GerenciarPerfis extends Component {
                 </Text>
               </View>
               </View>
+<<<<<<< HEAD
               
+=======
+>>>>>>> 6a6cffde2c367ce9d4019489de1a90af04271ec7
               <Button buttonStyle={styles.buttonStyle}
             title = "Concluído" onPress={()=> 
             {navigation.navigate('Tela')}}/> 
@@ -95,19 +98,22 @@ const styles = StyleSheet.create({
       marginLeft: 50,
     },
     buttonStyle: {
-        backgroundColor: 'red',
-        color:'red',
-        height: 50,
-        width: 220,
-        margin: 50, 
-        textAlign: 'center',
+      backgroundColor:'red',
+      width: 220,
+      height: 50,
+      margin: 50,
+      fontSize:20,
+      textAlign: 'center',
     },
     button1Style:{
         backgroundColor: 'red',  
         height: 50,
         width: 220,
-        margin: 50, 
+        marginBottom: 50, 
+        marginLeft: 90,
+        marginRight: 40,
         textAlign: 'center',
+        alignItems: 'center',
     },
     menuStyle:{
       display:'flex',
